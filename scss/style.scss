@@ -1,0 +1,120 @@
+@import 'nullset';
+
+// @font-face { 
+//      font-family: "HeliosCondRegular";
+//      src: url("./fonts/HeliosCondRegular/HeliosCondRegular.eot");
+//      src: url("./fonts/HeliosCondRegular/HeliosCondRegular.eot?#iefix")format("embedded-opentype"),
+//      url("./fonts/HeliosCondRegular/HeliosCondRegular.woff") format("woff"),
+//      url("./fonts/HeliosCondRegular/HeliosCondRegular.ttf") format("truetype");
+//      font-style: normal;
+//      font-weight: 400;
+// }
+
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+$maxHeight: 925;
+@mixin adaptiv-height($pcSize, $mobHeight) {
+	$addSize: $pcSize - $mobSize;
+	$maxHeight: $maxHeight - 896;
+	line-height: calc(#{$mobHeight + px} + #{$addSize} * ((100vh - 896px) / #{$maxHeight}));
+}
+
+@font-face { 
+     font-family: "HeliosCondBold";
+     src: url("../fonts/HeliosCondBold/HeliosCondBold.eot");
+     src: url("../fonts/HeliosCondBold/HeliosCondBold.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/HeliosCondBold/HeliosCondBold.woff") format("woff"),
+     url("../fonts/HeliosCondBold/HeliosCondBold.ttf") format("truetype");
+     font-style: normal;
+     font-weight: 700;
+}
+
+header{
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid red;
+}
+
+
+.header-main {
+     display: flex;
+}
+.header-logo {
+     display: flex;
+     flex-direction: column;
+		&__icon {
+               display: flex;
+               justify-content: center;
+               width: 100%;
+               background: #FFCC00;
+		}
+
+		&__text {
+               font-family: 'HeliosCondBold', Fallback, sans-serif;
+               text-transform: uppercase;
+               font-weight: 700;
+               @include adaptiv-font( 13, 8)
+		}
+}
+.header-info {
+
+		&__navigation {
+		}
+
+		&__links {
+		}
+
+		&__login {
+		}
+}
+.header-content {
+
+		&__bunner {
+               max-width: 253px;
+               background: #E2E2E2;
+               width: 100%;
+		}
+
+		&__cart {
+		}
+
+		&__cart-link {
+		}
+
+		&__star-link {
+		}
+
+		&__balance-link {
+		}
+
+		&__time {
+		}
+
+		&__time-work {
+		}
+
+		&__tel {
+		}
+
+		&__region {
+		}
+}
+.menu {
+     display: flex;
+		&__search {
+		}
+
+		&__links {
+		}
+
+		&__sale {
+		}
+}
