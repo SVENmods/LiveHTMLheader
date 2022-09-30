@@ -4,94 +4,103 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
      <link rel="stylesheet" type="text/css" href="css/style.css">
      <title>TestHeader</title>
 </head>
 <body>
      <header>
-          <div class="header-main">
-               <div class="header-logo">
-                    <div class="header-logo__icon">
-                         <img src="./resources/icons/logo.svg" alt="logo">
+          <div class="header-container">
+               <div class="header-main">
+                    <div class="header-logo">
+                         <div class="header-logo__icon">
+                              <img src="./resources/icons/logo.svg" alt="logo">
+                         </div>
+                         <span class="header-logo__text">магазин инструмента</span>
                     </div>
-                    <span class="header-logo__text">магазин инструмента</span>
-               </div>
-               <div class="header-info">
-                    <div class="header-info__navigation">
-                         <div class="header-info__links">
-                              <a href="#">Каталог инструментов</a>
-                              <a href="#">Все для сада</a>
-                              <a href="#">Ручной интрумент</a>
-                              <a href="#">Электрика</a>
-                              <a href="#">Доставка</a>
-                              <a href="#">Оплата</a>
-                              <a href="#">О нас</a>
+                    <div class="header-info">
+                         <div class="header-info__navigation">
+                              <div class="header-info__links">
+                                   <a href="#">Каталог инструментов</a>
+                                   <a href="#">Все для сада</a>
+                                   <a href="#">Ручной интрумент</a>
+                                   <a href="#">Электрика</a>
+                                   <a href="#">Доставка</a>
+                                   <a href="#">Оплата</a>
+                                   <a href="#">О нас</a>
+                              </div>
+                              <div class="header-info__login">
+                                   <a href="#">Вход</a>
+                                   <div class="divider"></div>
+                                   <a href="#">Регистрация</a>
+                              </div>
                          </div>
-                         <div class="header-info__login">
-                              <a href="#">Вход</a>
-                              <a href="#">Регистрация</a>
+                         <div class="header-content">
+                              <div class="header-content__bunner"></div>
+                              <div class="header-content__cart">
+                                   <div class="header-content__cart-link">
+                                        <img src="./resources/icons/cart.svg" alt="cart">
+                                        <a href="#">
+                                             <span>3 шт. </span>
+                                             /
+                                             <span>17 250 р.</span>
+                                        </a>
+                                   </div>
+                                   <div class="header-content__star-link">
+                                        <img src="./resources/icons/star.svg" alt="star">
+                                        <a href="#">Избранное 
+                                             <span>(7)</span>
+                                        </a>
+                                   </div>
+                                   <div class="header-content__balance-link">
+                                        <img src="./resources/icons/balance.svg" alt="balance">
+                                        <a href="#">К сравнению 
+                                             <span>(5)</span>
+                                        </a>
+                                   </div>
+                              </div>
+                              <div class="header-content__imgs">
+                                   <img src="./resources/img/Rectangle25.png" alt="Rectangle25">
+                                   <img src="./resources/img/Rectangle26.png" alt="Rectangle26">
+                                   <img src="./resources/img/Rectangle27.png" alt="Rectangle27">
+                              </div>
+                              <div class="header-content__about">
+                                   <div class="header-content__time">
+                                        <span>Время работы:</span>
+                                        <span>10:00 — 19:00</span>
+                                   </div>
+                                   <div class="header-content__tel">8 495 721-25-25</div>
+                                   <div class="header-content__region">
+                                        <span>Москва</span>
+                                        <span>▶</span>
+                                        <label for="region">сменить</label>
+                                        <!-- <select id="region">
+                                             <option>регион 1</option>
+                                             <option>регион 2</option>
+                                             <option>регион 3</option>
+                                             <option>регион 4</option>
+                                        </select> -->
+                                   </div>
+                              </div>
                          </div>
                     </div>
-                    <div class="header-content">
-                         <div class="header-content__bunner"></div>
-                         <div class="header-content__cart">
-                              <div class="header-content__cart-link">
-                                   <img src="./resources/icons/cart.svg" alt="cart">
-                                   <a href="#">
-                                        <span>(3 шт. )</span>
-                                        /
-                                        <span>(17 250 р.)</span>
-                                   </a>
-                              </div>
-                              <div class="header-content__star-link">
-                                   <img src="./resources/icons/star.svg" alt="star">
-                                   <a href="#">Избранное 
-                                        <span>(7)</span>
-                                   </a>
-                              </div>
-                              <div class="header-content__balance-link">
-                                   <img src="./resources/icons/balance.svg" alt="balance">
-                                   <a href="#">К сравнению 
-                                        <span>(5)</span>
-                                   </a>
-                              </div>
-                         </div>
-                         <div class="header-content__time">
-                              <div class="header-content__time-work">
-                                   <span>Время работы:</span>
-                                   <span>10:00 — 19:00</span>
-                              </div>
-                              <div class="header-content__tel">8 495 721-25-25</div>
-                              <div class="header-content__region">
-                                   <span>Москва</span>
-                                   <span>▶</span>
-                                   <label for="region">сменить</label>
-                                   <!-- <select id="region">
-                                        <option>регион 1</option>
-                                        <option>регион 2</option>
-                                        <option>регион 3</option>
-                                        <option>регион 4</option>
-                                   </select> -->
-                              </div>
-                         </div>
+               </div>
+               <div class="menu">
+                    <div class="menu__search">
+                         <img src="./resources/icons/search.svg" alt="search">
                     </div>
-               </div>
-          </div>
-          <div class="menu">
-               <div class="menu__search">
-                    <img src="./resources/icons/search.svg" alt="search">
-               </div>
-               <div class="menu__links">
-                    <a href="">Перфораторы</a>
-                    <a href="">Дрели</a>
-                    <a href="">Шлифмашины</a>
-                    <a href="">Пистолеты</a>
-                    <a href="">Электропилы</a>
-                    <a href="">Наборы инструментов</a>
-                    <a href="">Акксесуары</a>
-               </div>
-               <div class="menu__sale">
-                    <a href="">Распродажа</a>
+                    <div class="menu__links">
+                         <a href="">Перфораторы</a>
+                         <a href="">Дрели</a>
+                         <a href="">Шлифмашины</a>
+                         <a href="">Пистолеты</a>
+                         <a href="">Электропилы</a>
+                         <a href="">Наборы инструментов</a>
+                         <a href="">Акксесуары</a>
+                    </div>
+                    <div class="menu__sale">
+                         <a href="">Распродажа</a>
+                    </div>
                </div>
           </div>
      </header>
