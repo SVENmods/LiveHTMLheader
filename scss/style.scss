@@ -38,17 +38,20 @@ body{
 	height: 100%;
 }
 
-
 header{
 	display: flex;
 	justify-content: center;
+	*{
+		outline: 1px solid red;
+	}
 }
 .header-container{
      display: flex;
      flex-direction: column;
 	justify-content: center;
 	margin-top: 16px;
-	max-width: 1170px;
+	max-width: 2170px;
+	margin: 16px 135px;
 	width: 100%;
 	a{
 		color: #000000;
@@ -119,14 +122,17 @@ header{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 100%;
+			flex-grow: 8.1;
+			flex-shrink: 1;
 
 		}
 
 		&__login {
 			display: flex;
 			align-items: center;
-			margin-left: 181px;
+			flex-grow: 9.55;
+			flex-shrink: 1;
+			justify-content: flex-end;
 		}
 }
 .header-content {
@@ -148,7 +154,6 @@ header{
 		&__cart {
 			display: flex;
 			flex-direction: column;
-			// margin-left: 30px;
 			align-items: flex-start;
 			a{
 				border-bottom: 1px solid #252525;
@@ -162,7 +167,7 @@ header{
 		}
 
 		&__cart-link {
-			@include adaptiv-font(14, 9);
+			@include adaptiv-font(14, 1);
 			line-height: 16px;
 		}
 
@@ -182,6 +187,9 @@ header{
 		&__imgs{
 			display: flex;
 			flex-direction: row;
+			img{
+				width: 5vw;
+			}
 		}
 
 		&__imgs :nth-child(2){
@@ -192,7 +200,6 @@ header{
 			display: flex;
 			width: 100%;
 			max-width: 200px;
-			// margin-left: 58px;
 			flex-direction: column;
 			justify-content: space-between;
 			height: 92px;
@@ -206,7 +213,7 @@ header{
 			justify-content: space-between;
 			flex-direction: row;
 			font-weight: 400;
-			@include adaptiv-font(12, 7);
+			@include adaptiv-font(12, 1);
 			font-size: 12px;
 			line-height: 14px;
 			letter-spacing: -0.025em;
@@ -219,7 +226,7 @@ header{
 		}
 
 		&__tel {
-			@include adaptiv-font(25, 20);
+			@include adaptiv-font(25, 1);
 			font-style: normal;
 			font-weight: 700;
 			line-height: 29px;
@@ -241,7 +248,7 @@ header{
 				display: flex;
 			}
 			font-weight: 400;
-			@include adaptiv-font(12, 7);
+			@include adaptiv-font(12, 3);
 			line-height: 14px;
 			letter-spacing: -0.01em;
 		}
@@ -272,9 +279,6 @@ header{
 	@include adaptiv-font(14, 4);
 	line-height: 16px;
 	margin-top: 31px;
-	// *{
-	// 	outline: 1px solid red;
-	// }
 		&__search {
 			padding: 6px 7px 4px 8px;
 			border-radius: 15px 0px 0px 15px;
