@@ -262,6 +262,7 @@ header * {
   line-height: 29px;
   letter-spacing: -0.02em;
   margin: 15px 0px 14px 0px;
+  line-height: 29px;
 }
 .header-content .divider {
   width: 100%;
@@ -308,7 +309,7 @@ header * {
   font-weight: 600;
   font-size: calc(4px + 10 * ((100vw - 320px) / 1120));
   line-height: 16px;
-  margin-top: 31px;
+  margin-top: 26px;
 }
 .menu__search {
   padding: 6px 7px 4px 8px;
