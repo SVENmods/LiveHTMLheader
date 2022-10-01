@@ -1,3 +1,8 @@
+@media only screen and (min-width: 1700px) {
+  .header-content__tel {
+    font-size: calc(10px + 10 * (100vw - 320px) / 1120);
+  }
+}
 @media only screen and (max-width: 1500px) {
   .header-container {
     max-width: 1170px;
