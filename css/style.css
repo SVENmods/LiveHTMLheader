@@ -87,9 +87,6 @@ header {
   display: flex;
   justify-content: center;
 }
-header * {
-  outline: 1px solid red;
-}
 
 .header-container {
   display: flex;
@@ -119,19 +116,23 @@ header * {
 .header-logo__icon {
   display: flex;
   justify-content: center;
-  width: 100%;
-  min-width: 210px;
+  width: 15vw;
   background: #FFCC00;
-  height: 111px;
+  height: 15vh;
+}
+.header-logo__icon img {
+  width: 6.8vw;
+  height: 100%;
 }
 .header-logo__text {
   font-family: "HeliosCondBold", Fallback, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: calc(8px + 5 * ((100vw - 320px) / 1120));
+  font-size: calc(6px + 7 * ((100vw - 320px) / 1120));
   line-height: 15px;
   margin-top: 8px;
   cursor: default;
+  text-align: center;
 }
 
 .header-info {
@@ -191,6 +192,7 @@ header * {
   max-width: 253px;
   background: #E2E2E2;
   width: 100%;
+  width: 18.1vw;
   height: 100%;
   max-height: 70px;
 }
@@ -205,8 +207,8 @@ header * {
   text-align: left;
 }
 .header-content__cart img {
-  margin-right: 11px;
-  width: 19px;
+  margin-right: 0.5vw;
+  width: 1.35vw;
 }
 .header-content__cart-link {
   font-size: calc(1px + 13 * ((100vw - 320px) / 1120));
@@ -256,7 +258,7 @@ header * {
   letter-spacing: -0.01em;
 }
 .header-content__tel {
-  font-size: calc(1px + 24 * ((100vw - 320px) / 1120));
+  font-size: calc(10px + 15 * ((100vw - 320px) / 1120));
   font-style: normal;
   font-weight: 700;
   line-height: 29px;
@@ -303,7 +305,6 @@ header * {
   align-items: center;
   background: #252525;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-  min-height: 34px;
   border-radius: 15px;
   font-family: "Roboto";
   font-weight: 600;
@@ -326,8 +327,9 @@ header * {
 .menu .search-input {
   background: transparent;
   border: 0px solid #000000;
-  transition: max-width 0.4s ease-in, border 0.4s ease-in-out;
+  transition: max-width 0.4s ease-in, min-width 0.4s ease-in, border 0.4s ease-in-out;
   width: 100%;
+  min-width: 0px;
   max-width: 0px;
   margin-left: 5px;
   padding: 2px 0px 2px 4px;
@@ -339,38 +341,57 @@ header * {
 .menu .search-input ::-moz-placeholder {
   font-family: "Roboto";
   font-weight: 600;
-  font-size: calc(9px + 5 * ((100vw - 320px) / 1120));
-  color: #000000;
+  font-size: calc(2px + 12 * ((100vw - 320px) / 1120));
+  color: #FFFFFF;
 }
 .menu .search-input :-ms-input-placeholder {
   font-family: "Roboto";
   font-weight: 600;
-  font-size: calc(9px + 5 * ((100vw - 320px) / 1120));
-  color: #000000;
+  font-size: calc(2px + 12 * ((100vw - 320px) / 1120));
+  color: #FFFFFF;
 }
 .menu .search-input ::placeholder {
   font-family: "Roboto";
   font-weight: 600;
-  font-size: calc(9px + 5 * ((100vw - 320px) / 1120));
-  color: #000000;
+  font-size: calc(2px + 12 * ((100vw - 320px) / 1120));
+  color: #FFFFFF;
 }
-.menu__search:hover {
-  padding: 6px 7px 4px 8px;
+.menu__search:hover, .menu__sale:hover {
+  background: #252525;
+  color: #ffffff;
+}
+.menu__sale:hover a {
+  color: #ffffff;
 }
 .menu__search:hover .search-input {
   max-width: 110px;
-  border: 1px solid #000000;
+  min-width: 5.5vw;
+  border: 1px solid #FFCC00;
+  color: #FFFFFF;
 }
 .menu .search-input:focus {
   transition: none;
   max-width: 110px;
-  border: 1px solid #000000;
+  min-width: 5.5vw;
+  border: 1px solid #FFCC00;
+  background: #000000;
+  color: #FFFFFF;
+}
+.menu__search img {
+  transition: all 0.4s ease-in;
+}
+.menu__search:hover img {
+  filter: invert(1);
+}
+.menu a {
+  transition: all 0.3s ease-in;
 }
 .menu__links {
   display: flex;
   flex-direction: row;
   height: 100%;
   justify-content: center;
+  text-align: center;
 }
 .menu__links a {
   display: flex;
@@ -379,7 +400,6 @@ header * {
   height: 100%;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in;
   padding: 0px 19px;
 }
 .menu__links a:hover {
@@ -390,4 +410,5 @@ header * {
   border-radius: 0px 15px 15px 0px;
   padding: 10px 15px 8px 14px;
   text-transform: uppercase;
+  transition: all 0.4s ease-in;
 }
